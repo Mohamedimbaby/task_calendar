@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import '../../../core/theme/app_colors.dart';
 import '../widgets/project/project_stat_card.dart';
 import '../widgets/project/productivity_chart.dart';
 
 class ProjectSummaryPage extends StatelessWidget {
-  const ProjectSummaryPage({Key? key}) : super(key: key);
+  const ProjectSummaryPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -81,7 +80,7 @@ class ProjectSummaryPage extends StatelessWidget {
             const SizedBox(height: 20),
 
             // View All Projects Button
-            Container(
+            SizedBox(
               width: double.infinity,
               height: 50,
               child: OutlinedButton(
@@ -123,7 +122,7 @@ class ProjectSummaryPage extends StatelessWidget {
             const SizedBox(height: 20),
 
             // Productivity Chart
-            Container(
+            SizedBox(
               height: 250,
               child: ProductivityChart(),
             ),
