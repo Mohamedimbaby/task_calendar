@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
-import '../../../core/theme/app_colors.dart';
 import '../../cubits/calendar/calendar_cubit.dart';
 import '../../cubits/calendar/calendar_state.dart';
 import 'month_picker_sheet.dart';
 
 class CalendarHeaderWidget extends StatelessWidget {
-  const CalendarHeaderWidget({Key? key}) : super(key: key);
+  const CalendarHeaderWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

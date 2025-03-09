@@ -6,7 +6,7 @@ import '../../cubits/login/login_cubit.dart';
 import 'social_login_button_widget.dart';
 
 class SocialLoginsWidget extends StatelessWidget {
-  const SocialLoginsWidget({Key? key}) : super(key: key);
+  const SocialLoginsWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -10,7 +10,7 @@ import '../widgets/login/register_option_widget.dart';
 import '../../core/theme/app_colors.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
+  const LoginPage({super.key});
 
   @override
   State<LoginPage> createState() => _LoginPageState();

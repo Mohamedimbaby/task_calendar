@@ -2,20 +2,13 @@ import '../../domain/entities/calendar_event.dart';
 
 class CalendarEventModel extends CalendarEvent {
   CalendarEventModel({
-    required String id,
-    required String title,
-    required DateTime startTime,
-    required DateTime endTime,
-    required EventType type,
-    String? description,
-  }) : super(
-          id: id,
-          title: title,
-          startTime: startTime,
-          endTime: endTime,
-          type: type,
-          description: description,
-        );
+    required super.id,
+    required super.title,
+    required super.startTime,
+    required super.endTime,
+    required super.type,
+    super.description,
+  });
 
   factory CalendarEventModel.fromJson(Map<String, dynamic> json) {
     return CalendarEventModel(

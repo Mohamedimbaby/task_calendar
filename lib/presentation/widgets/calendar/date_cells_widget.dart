@@ -3,10 +3,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../cubits/calendar/calendar_cubit.dart';
-import '../../cubits/calendar/calendar_state.dart';
 
 class DateCellsWidget extends StatelessWidget {
-  const DateCellsWidget({Key? key}) : super(key: key);
+  const DateCellsWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +13,7 @@ class DateCellsWidget extends StatelessWidget {
     final calendarState = context.watch<CalendarCubit>().state;
     final daysInMonth = _getDaysInVisibleMonth(calendarState.displayedMonth);
 
-    return Container(
+    return SizedBox(
       height: 90,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
@@ -22,7 +21,6 @@ class DateCellsWidget extends StatelessWidget {
         itemBuilder: (context, index) {
           final date = daysInMonth[index];
           final isSelected = _isSameDay(date, calendarState.selectedDate);
-          final isToday = _isSameDay(date, DateTime.now());
           final dayFormat = DateFormat('d');
           final dayOfWeekFormat = DateFormat('E');
 

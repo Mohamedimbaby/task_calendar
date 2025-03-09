@@ -3,7 +3,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../../../core/theme/app_colors.dart';
 
 class ProductivityChart extends StatefulWidget {
-  const ProductivityChart({Key? key}) : super(key: key);
+  const ProductivityChart({super.key});
 
   @override
   State<ProductivityChart> createState() => _ProductivityChartState();

@@ -15,11 +15,11 @@ class LoginFormWidget extends StatelessWidget {
   final LoginState state;
 
   const LoginFormWidget({
-    Key? key,
+    super.key,
     required this.usernameController,
     required this.passwordController,
     required this.state,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

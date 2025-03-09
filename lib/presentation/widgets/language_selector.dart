@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 class LanguageSelector extends StatelessWidget {
   final Function(Locale) onLanguageSelected;
 
-  const LanguageSelector({Key? key, required this.onLanguageSelected})
-      : super(key: key);
+  const LanguageSelector({super.key, required this.onLanguageSelected});
 
   @override
   Widget build(BuildContext context) {

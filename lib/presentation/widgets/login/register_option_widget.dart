@@ -3,7 +3,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../../../core/theme/app_colors.dart';
 
 class RegisterOptionWidget extends StatelessWidget {
-  const RegisterOptionWidget({Key? key}) : super(key: key);
+  const RegisterOptionWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

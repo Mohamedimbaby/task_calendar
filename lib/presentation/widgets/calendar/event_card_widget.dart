@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import '../../../core/theme/app_colors.dart';
 import '../../../domain/entities/calendar_event.dart';
 
 class EventCardWidget extends StatelessWidget {
   final CalendarEvent event;
 
   const EventCardWidget({
-    Key? key,
+    super.key,
     required this.event,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -102,16 +101,4 @@ class EventCardWidget extends StatelessWidget {
     }
   }
 
-  String _getEventTypeText(EventType type) {
-    switch (type) {
-      case EventType.meeting:
-        return 'Meeting';
-      case EventType.review:
-        return 'Review';
-      case EventType.standup:
-        return 'Standup';
-      case EventType.other:
-        return 'Other';
-    }
-  }
 }

@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:task_1/core/theme/app_colors.dart';
+
 import '../cubits/calendar/calendar_cubit.dart';
 import '../cubits/calendar/calendar_state.dart';
 import '../cubits/events/events_cubit.dart';
+import '../pages/project_summary_page.dart';
 import '../widgets/calendar/calendar_header_widget.dart';
 import '../widgets/calendar/date_cells_widget.dart';
 import '../widgets/calendar/event_timeline_widget.dart';
 import '../widgets/calendar/tab_selector_widget.dart';
 import '../widgets/navigation/custom_bottom_nav.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import '../pages/project_summary_page.dart';
 
 class CalendarPage extends StatefulWidget {
-  const CalendarPage({Key? key}) : super(key: key);
+  const CalendarPage({super.key});
 
   @override
   State<CalendarPage> createState() => _CalendarPageState();

@@ -4,7 +4,7 @@ import '../../cubits/calendar/calendar_cubit.dart';
 import '../../cubits/calendar/calendar_state.dart';
 
 class TabSelectorWidget extends StatelessWidget {
-  const TabSelectorWidget({Key? key}) : super(key: key);
+  const TabSelectorWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -47,11 +47,10 @@ class _TabItem extends StatelessWidget {
   final VoidCallback onTap;
 
   const _TabItem({
-    Key? key,
     required this.title,
     required this.isSelected,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
